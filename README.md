@@ -3,14 +3,14 @@
 
 <div>
     <a href="https://zhiyuanyou.github.io/" target="_blank">Zhiyuan You</a><sup>12</sup>,
-    <a href="https://caixin98.github.io/" target="_blank">Xin Cai</a><sup>1</sup>,
+    <a href="https://caixin98.github.io/" target="_blank">Xin Cai</a><sup>2</sup>,
     <a href="https://www.jasongt.com/" target="_blank">Jinjin Gu</a><sup>3</sup>,
-    <a href="https://tianfan.info/" target="_blank">Tianfan Xue</a><sup>1</sup><sup>#</sup>,
-    <a href="https://xpixel.group/2010/01/20/chaodong.html" target="_blank">Chao Dong</a><sup>2</sup><sup>#</sup>,
+    <a href="https://tianfan.info/" target="_blank">Tianfan Xue</a><sup>2</sup><sup>#</sup>,
+    <a href="https://xpixel.group/2010/01/20/chaodong.html" target="_blank">Chao Dong</a><sup>1</sup><sup>#</sup>,
 </div>
 
 <div>
-  <sup>1</sup>The Chinese University of Hong Kong, <sup>2</sup>Shenzhen Institute of Advanced Technology, Chinese Academy of Sciences, <sup>3</sup>University of Sydney
+  <sup>1</sup>Shenzhen Institutes of Advanced Technology, Chinese Academy of Sciences, <sup>2</sup>The Chinese University of Hong Kong, <sup>3</sup>University of Sydney
 </div>
 
 <div><sup>#</sup>Corresponding author.</div>
