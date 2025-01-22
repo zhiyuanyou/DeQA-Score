@@ -17,9 +17,12 @@
 
 <div>
   <a href="https://depictqa.github.io/deqa-score/" target="_blank"><strong>Homepage</strong></a> | 
-  <a href="https://huggingface.co/zhiyuanyou/DeQA-Score-Mix3" target="_blank"><strong>Model Weights</strong></a> | 
+  <strong>Model Weights</strong> ( 
+  <a href="https://huggingface.co/zhiyuanyou/DeQA-Score-Mix3" target="_blank"><strong>Full Tuning</strong></a> / 
+  <a href="https://huggingface.co/zhiyuanyou/DeQA-Score-LoRA-Mix3" target="_blank"><strong>LoRA Tuning</strong></a> 
+  ) | 
   <a href="https://huggingface.co/datasets/zhiyuanyou/Data-DeQA-Score" target="_blank"><strong>Datasets</strong></a> | 
-  <strong>Paper</strong>
+  <a href="https://arxiv.org/abs/2501.11561" target="_blank"><strong>Paper</strong></a> 
 </div>
 
 <h2>Motivation</h2> 
@@ -151,7 +154,7 @@ and [CSIQ](https://s2.smu.edu/~eclarson/csiq.html).
 
 <a id="pretrained_weights"></a>
 
-We provide two model weights (fully tuning and LoRA tuning). 
+We provide two model weights (full tuning and LoRA tuning) with similar performance. 
 
 | | Training Datasets | Weights |
 |-----|-----|-----|
@@ -235,7 +238,7 @@ If you find our work useful for your research and applications, please cite usin
 @article{deqa_score,
   title={Teaching Large Language Models to Regress Accurate Image Quality Scores using Score Distribution},
   author={You, Zhiyuan and Cai, Xin and Gu, Jinjin and Xue, Tianfan and Dong, Chao},
-  journal={arXiv preprint arXiv},
+  journal={arXiv preprint arXiv:2501.11561},
   year={2025},
 }
 
