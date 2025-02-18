@@ -49,7 +49,11 @@ import torch
 from transformers import AutoModelForCausalLM
 
 model = AutoModelForCausalLM.from_pretrained(
-  "zhiyuanyou/DeQA-Score-Mix3", trust_remote_code=True, torch_dtype=torch.float16, device_map="auto"
+  "zhiyuanyou/DeQA-Score-Mix3",
+  trust_remote_code=True,
+  attn_implementation="eager",
+  torch_dtype=torch.float16,
+  device_map="auto",
 )
 
 from PIL import Image
