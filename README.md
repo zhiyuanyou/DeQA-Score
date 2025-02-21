@@ -41,7 +41,7 @@
 
 ## [Installation Free!] Quicker Start with Hugging Face AutoModel
 
-No need to install this GitHub repo. 
+Only with `transformers==4.36.1`. No need to install this GitHub repo
 
 ```python
 import requests
