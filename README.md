@@ -239,10 +239,10 @@ This work is based on [Q-Align](https://github.com/Q-Future/Q-Align). Sincerely 
 If you find our work useful for your research and applications, please cite using the BibTeX:
 
 ```bibtex
-@article{deqa_score,
+@inproceedings{deqa_score,
   title={Teaching Large Language Models to Regress Accurate Image Quality Scores using Score Distribution},
   author={You, Zhiyuan and Cai, Xin and Gu, Jinjin and Xue, Tianfan and Dong, Chao},
-  journal={arXiv preprint arXiv:2501.11561},
+  booktitle={IEEE Conference on Computer Vision and Pattern Recognition},
   year={2025},
 }
 
