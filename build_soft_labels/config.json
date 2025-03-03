@@ -1,0 +1,35 @@
+{
+  "answer": "The quality of the image is {}.",
+  "dataset_params": {
+    "koniq": {
+      "split_json": "../../Data-DeQA-Score/KONIQ/metas/split.json",
+      "mos_json": "../../Data-DeQA-Score/KONIQ/metas/mos.json",
+      "save_train": "../../Data-DeQA-Score/KONIQ/metas/train_koniq_7k_new.json",
+      "save_test": "../../Data-DeQA-Score/KONIQ/metas/test_koniq_2k_new.json",
+      "img_dir": "KONIQ/images",
+      "density_type": "pdf",
+      "thre_std": 0.2,
+      "thre_diff": 0.1
+    },
+    "spaq": {
+      "split_json": "../../Data-DeQA-Score/SPAQ/metas/split.json",
+      "mos_json": "../../Data-DeQA-Score/SPAQ/metas/mos.json",
+      "save_train": "../../Data-DeQA-Score/SPAQ/metas/train_spaq_9k_new.json",
+      "save_test": "../../Data-DeQA-Score/SPAQ/metas/test_spaq_2k_new.json",
+      "img_dir": "SPAQ/images",
+      "density_type": "cdf",
+      "thre_std": 0.2,
+      "thre_diff": 0.1
+    },
+    "kadid": {
+      "split_json": "../../Data-DeQA-Score/KADID10K/metas/split.json",
+      "mos_json": "../../Data-DeQA-Score/KADID10K/metas/mos.json",
+      "save_train": "../../Data-DeQA-Score/KADID10K/metas/train_kadid_8k_new.json",
+      "save_test": "../../Data-DeQA-Score/KADID10K/metas/test_kadid_2k_new.json",
+      "img_dir": "KADID10K/images",
+      "density_type": "pdf",
+      "thre_std": 0.2,
+      "thre_diff": 0.1
+    }
+  }
+}

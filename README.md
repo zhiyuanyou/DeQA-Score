@@ -112,6 +112,8 @@ print(scorer(img_list).tolist())
 
 ### Datasets
 
+<a id="datasets"></a>
+
 - Download our meta files from [Huggingface Metas](https://huggingface.co/datasets/zhiyuanyou/Data-DeQA-Score). 
 
 - Download source images from [KonIQ](https://database.mmsp-kn.de/koniq-10k-database.html), 
@@ -229,6 +231,19 @@ sh scripts/train_lora.sh $GPU_IDs
 ```shell
 sh scripts/train.sh $GPU_IDs
 ```
+
+
+## Soft Label Construction
+
+- Download `split.json` (training & test split info) and `mos.json` (mos & std info) of KonIQ, SPAQ, and KADID from [Huggingface Metas](https://huggingface.co/datasets/zhiyuanyou/Data-DeQA-Score), and arrange the folders as in [Datasets](#datasets).
+
+- Run the following scripts to construct the distribution-based soft labels.
+
+```shell
+cd build_soft_labels
+python gen_soft_label.py
+```
+
 
 ## Acknowledgements
 
