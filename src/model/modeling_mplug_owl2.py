@@ -387,8 +387,9 @@ class MPLUGOwl2LlamaForCausalLM(LlamaForCausalLM, MPLUGOwl2MetaForCausalLM):
         for level_id in level_ids_label:
             assert level_id in self.config.level_ids
 
-        num_vision_tokens = logits.shape[1] - labels.shape[1]
-        idx_level_logit = idx_level_label + num_vision_tokens - 1
+        # After padding in prepare_inputs_labels_for_multimodal(), the length of labels will be the same as logits
+        assert logits.shape[1] == labels.shape[1]
+        idx_level_logit = idx_level_label - 1
         logits_level_ids = logits[
             torch.arange(batch_size), idx_level_logit
         ].contiguous()  # [B, V]
