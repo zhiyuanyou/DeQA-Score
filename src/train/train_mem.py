@@ -211,27 +211,15 @@ def get_mm_adapter_state_maybe_zero_3(named_params, keys_to_match):
     return to_return
 
 
-def find_all_linear_names(model):
-    cls = torch.nn.Linear
+def find_all_lora_names(model):
     lora_module_names = set()
-    multimodal_keywords = ["visual_abstractor"]
-    for name, module in model.named_modules():
-        if not any(mm_keyword in name for mm_keyword in multimodal_keywords):
-            if "v_proj.multiway.1" in name or "q_proj" in name:
-                lora_module_names.add(name)
-            else:
-                continue
-        else:
+    multimodal_keywords = ["vision_model", "visual_abstractor"]
+    for name, _ in model.named_modules():
+        if any(mm_keyword in name for mm_keyword in multimodal_keywords):
             continue
-            if "query" in name or "value" in name:
-                lora_module_names.add(name)
-            else:
-                continue
-        if isinstance(module, cls):
+        if "v_proj.multiway.1" in name or "q_proj" in name:
             lora_module_names.add(name)
 
-    if "lm_head" in lora_module_names:  # needed for 16-bit
-        lora_module_names.remove("lm_head")
     ls = list(lora_module_names)
     print(ls)
     return ls
@@ -360,7 +348,7 @@ def train():
         lora_config = LoraConfig(
             r=training_args.lora_r,
             lora_alpha=training_args.lora_alpha,
-            target_modules=find_all_linear_names(model),
+            target_modules=find_all_lora_names(model),
             lora_dropout=training_args.lora_dropout,
             bias=training_args.lora_bias,
             task_type="CAUSAL_LM",
