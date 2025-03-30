@@ -434,11 +434,11 @@ def train():
     for n, p in model.named_parameters():
         if training_args.lora_enable:
             p.requires_grad = True if "lora_" in n else False
+            # if "lm_head" in n:
+            #     print(n)
+            #     p.requires_grad = True
         else:
             p.requires_grad = True
-        # if "lm_head" in n:
-        # print(n)
-        # p.requires_grad = True
     if training_args.lora_enable:
         model.print_trainable_parameters()
 

@@ -106,12 +106,7 @@ def load_pretrained_model(
                     model_path, "non_lora_trainables.bin"
                 )
             non_lora_trainables = {
-                (k[11:] if k.startswith("base_model.") else k): v
-                for k, v in non_lora_trainables.items()
-            }
-            if any(k.startswith("model.model.") for k in non_lora_trainables):
-                non_lora_trainables = {
-                    (k[6:] if k.startswith("model.") else k): v
+                (k[17:] if k.startswith("base_model.model.") else k): v
                     for k, v in non_lora_trainables.items()
                 }
             model.load_state_dict(non_lora_trainables, strict=False)
@@ -153,7 +148,6 @@ def load_pretrained_model(
             print("Convert to FP16...")
             model.to(torch.float16)
         else:
-            use_fast = False
             tokenizer = AutoTokenizer.from_pretrained(preprocessor_path, use_fast=False)
             model = AutoModelForCausalLM.from_pretrained(
                 model_path, low_cpu_mem_usage=True, **kwargs
