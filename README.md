@@ -5,13 +5,13 @@
     <a href="https://zhiyuanyou.github.io/" target="_blank">Zhiyuan You</a><sup>12</sup>,
     <a href="https://caixin98.github.io/" target="_blank">Xin Cai</a><sup>2</sup>,
     <a href="https://www.jasongt.com/" target="_blank">Jinjin Gu</a><sup>4</sup>,
-    <a href="https://tianfan.info/" target="_blank">Tianfan Xue</a><sup>23</sup><sup>#</sup>,
+    <a href="https://tianfan.info/" target="_blank">Tianfan Xue</a><sup>235</sup><sup>#</sup>,
     <a href="https://xpixel.group/2010/01/20/chaodong.html" target="_blank">Chao Dong</a><sup>134</sup><sup>#</sup>
 </div>
 
 <div>
-  <sup>1</sup>Shenzhen Institutes of Advanced Technology, Chinese Academy of Sciences, <sup>2</sup>The Chinese University of Hong Kong, 
-  <sup>3</sup>Shanghai AI Laboratory, <sup>4</sup>Shenzhen University of Advanced Technology  
+  <sup>1</sup>Shenzhen Institutes of Advanced Technology, Chinese Academy of Sciences, <sup>2</sup>Multimedia Laboratory, The Chinese University of Hong Kong, 
+  <sup>3</sup>Shanghai AI Laboratory, <sup>4</sup>Shenzhen University of Advanced Technology, <sup>5</sup>CPII under InnoHK
 </div>
 
 <div><sup>#</sup>Corresponding author.</div>
@@ -263,10 +263,10 @@ If you find our work useful for your research and applications, please cite usin
 }
 
 @article{depictqa_v2,
-    title={Descriptive Image Quality Assessment in the Wild},
-    author={You, Zhiyuan and Gu, Jinjin and Li, Zheyuan and Cai, Xin and Zhu, Kaiwen and Dong, Chao and Xue, Tianfan},
-    journal={arXiv preprint arXiv:2405.18842},
-    year={2024}
+    title={Enhancing Descriptive Image Quality Assessment with A Large-scale Multi-modal Dataset},
+    author={You, Zhiyuan and Gu, Jinjin and Cai, Xin and Li, Zheyuan and Zhu, Kaiwen and Dong, Chao and Xue, Tianfan},
+    journal={IEEE Transactions on Image Processing},
+    year={2025}
 }
 
 @inproceedings{depictqa_v1,
