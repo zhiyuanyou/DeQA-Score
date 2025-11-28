@@ -256,10 +256,11 @@ If you find our work useful for your research and applications, please cite usin
 
 ```bibtex
 @inproceedings{deqa_score,
-  title={Teaching Large Language Models to Regress Accurate Image Quality Scores using Score Distribution},
-  author={You, Zhiyuan and Cai, Xin and Gu, Jinjin and Xue, Tianfan and Dong, Chao},
-  booktitle={IEEE Conference on Computer Vision and Pattern Recognition},
-  year={2025},
+    title={Teaching Large Language Models to Regress Accurate Image Quality Scores using Score Distribution},
+    author={You, Zhiyuan and Cai, Xin and Gu, Jinjin and Xue, Tianfan and Dong, Chao},
+    booktitle={IEEE/CVF Conference on Computer Vision and Pattern Recognition},
+    pages={14483--14494},
+    year={2025}
 }
 
 @article{depictqa_v2,
@@ -273,6 +274,7 @@ If you find our work useful for your research and applications, please cite usin
     title={Depicting Beyond Scores: Advancing Image Quality Assessment through Multi-modal Language Models},
     author={You, Zhiyuan and Li, Zheyuan and Gu, Jinjin and Yin, Zhenfei and Xue, Tianfan and Dong, Chao},
     booktitle={European Conference on Computer Vision},
+    pages={259--276},
     year={2024}
 }
 ```
