@@ -44,7 +44,7 @@
 
 [2025.12] Thanks to @[lyf1212](https://github.com/lyf1212)'s suggestion, we add support on `transformers==4.46.3` with minor code modifications. See [details](https://github.com/zhiyuanyou/DeQA-Score/issues/32).
 
-Only with `transformers==4.36.1`. No need to install this GitHub repo
+The following code could be run directly with `transformers==4.36.1`. No need to install this GitHub repo.
 
 ```python
 import requests
