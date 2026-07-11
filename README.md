@@ -42,7 +42,7 @@
 
 ## [Installation Free!] Quicker Start with Hugging Face AutoModel
 
-[2025.12] Thanks to @[lyf1212](https://github.com/lyf1212)'s suggestion, we add support on `transformers==4.46.3` with minor code modifications. See [details](https://github.com/zhiyuanyou/DeQA-Score/issues/32).
+[2025.12] Thanks to @[lyf1212](https://github.com/lyf1212)'s and @[0x3f3f3f3fun](https://github.com/0x3f3f3f3fun)'s suggestions, we add support on `transformers==4.46.3` and `transformers==4.57.6` with minor code modifications. See [details](https://github.com/zhiyuanyou/DeQA-Score/issues/32).
 
 The following code could be run directly with `transformers==4.36.1`. No need to install this GitHub repo.
 
